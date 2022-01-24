@@ -7,6 +7,11 @@ $colors:(color1:blue, color2:black, color3:red);
   .#{$color}-bg {background-color:$color;}
 }
 
+@each $color in blue, black, red {
+  .#{$color}-bg {background-color: $color;}
+}
+
+
 
   div {
     height: 200px;
